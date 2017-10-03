@@ -1,0 +1,14 @@
+<?php
+  
+  // Set this value to the name of the content file
+  // Path should be relative to this file (ideally in the same directory)
+  $htmlpage = "content.html";
+  
+  // Set this to 0 to use default theme.
+  // Set this to 1 to make alternate theme the default
+  $switchtheme = 1;
+  
+  // These functions are required
+  require_once ("../functions.php");
+  
+?>

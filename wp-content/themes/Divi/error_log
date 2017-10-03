@@ -1,0 +1,6 @@
+[25-Mar-2017 03:09:09 asia/kolkata] PHP Fatal error:  Call to undefined function get_header() in /home/corptnein/public_html/wp-content/themes/Divi/404.php on line 1
+[25-Mar-2017 03:09:15 asia/kolkata] PHP Fatal error:  Call to undefined function get_header() in /home/corptnein/public_html/wp-content/themes/Divi/404.php on line 1
+[27-Mar-2017 10:12:16 asia/kolkata] PHP Fatal error:  Call to undefined function get_header() in /home/corptnein/public_html/wp-content/themes/Divi/404.php on line 1
+[28-Mar-2017 05:03:31 asia/kolkata] PHP Fatal error:  Call to undefined function get_header() in /home/corptnein/public_html/wp-content/themes/Divi/404.php on line 1
+[28-Mar-2017 06:56:14 asia/kolkata] PHP Fatal error:  Call to undefined function get_header() in /home/corptnein/public_html/wp-content/themes/Divi/404.php on line 1
+[30-Mar-2017 07:40:16 asia/kolkata] PHP Fatal error:  Call to undefined function get_header() in /home/corptnein/public_html/wp-content/themes/Divi/404.php on line 1

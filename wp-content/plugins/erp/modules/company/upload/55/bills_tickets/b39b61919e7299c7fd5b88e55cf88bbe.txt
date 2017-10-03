@@ -1,0 +1,6 @@
+$values = get_field( 'field_name' );
+if ( $values ) {
+    echo 'A value is set';
+} else {
+    echo 'A value is not set';
+}

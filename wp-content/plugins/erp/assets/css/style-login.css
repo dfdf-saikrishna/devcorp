@@ -1,0 +1,285 @@
+/*Custom Css*/
+
+body.login #loginform
+{border-radius: 10px;}
+body.login #lostpasswordform {
+background:#fff !important;
+}
+
+#login
+{width:40%;}
+
+.login form{}
+
+
+
+#login-btm{
+background: url(../images/login-btm.png);
+    display:block;
+    width: 100%;
+    height: 269px;
+    background-position: center;
+    margin: 0 auto;
+    position:absolute;
+    text-align:center;
+    background-repeat: no-repeat;
+    bottom:0;
+    z-index:-1;
+}
+
+body {
+
+background-image: url(../images/login-bg.png) !important;
+background-size: cover !important;
+}
+body.login h1 a {
+    background-image: url(../images/login-logo.png) !important;
+    min-height: 100px !important;
+    background-size: auto 100% !important;
+        position: absolute;
+    display: block;
+    width: 40%;
+    margin-top: -30px;
+    pointer-events:none;
+}
+.login #backtoblog a, .login #nav a {
+    //text-decoration: none !important;
+    //color: #FFFFFF !important;
+}
+.login input{
+     font-weight:normal !important;
+}
+
+#login form p.submit{
+    //margin-left: 30px!important;
+    //width: 200px!important;
+}
+
+.login a{
+text-decoration:none;
+color: rgba(255, 255, 255, 0.8);
+}
+
+.login form .input, .login input[type=text]{
+    width: 250px;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 35px;
+    background: #fbfbfb;
+}
+
+.login form .input, .login input[type=text]{
+    width: 98%;
+    font-size: 18px;
+    font-weight:bold;
+    border-radius:0px;
+    height: 35px;
+  border: 0;
+  box-shadow: -8px 20px 0px -17px #ebebeb, 8px 20px 0px -17px #ebebeb;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  background: url(../images/user-icon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+
+}
+
+.login input[type=password]{
+    width: 98%;
+    font-size: 18px;
+    font-weight:bold;
+    border-radius:0px;
+    height: 35px;
+  border: 0;
+  box-shadow: -8px 20px 0px -17px #ebebeb, 8px 20px 0px -17px #ebebeb;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  background: url(../images/pass-icon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+
+}
+
+.login input[type=text]:focus, input[type=password]:focus{
+ outline: none;
+ width: calc(100% - 10px);
+  box-shadow: -7px 10px 0px -7px #4EA6EA, 7px 10px 0px -7px #4EA6EA;
+  padding-left:25px;
+}
+
+
+.login label {
+    //color: #FFFFFF !important;
+}
+.login #login_error, .login .message{
+    border-left: 4px solid #00a0d2;
+    padding: 12px;
+    opacity: 0.64;
+    color: #FFFFFF !important;
+    margin-left: 0;
+    background: #000;
+    background-color: #000; !important;
+    background: rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.split-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%; }
+
+.split-content {
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  padding: 40px;
+  width: 440px; }
+  .split-content h1 {
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0; }
+
+.split-content-inner {
+  width: 100%; }
+
+.split-sidebar {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.04);
+  background-image: url("/wp-content/plugins/erp/assets/images/login-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  padding: 40px;
+  position: relative; }
+  .split-sidebar:after {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2; }
+
+.split-sidebar-inner {
+  color: #fff;
+  position: relative;
+  z-index: 3; }
+  .split-sidebar-inner h1 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    padding: 0 0 30px 0; }
+  .split-sidebar-inner ul {
+    font-size: 15px;
+    margin: 0;
+    padding: 0; }
+    .split-sidebar-inner ul li {
+      color: rgba(255, 255, 255, 0.8);
+      display: inline-block; }
+      .split-sidebar-inner ul li:after {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        content: '';
+        display: inline-block;
+        height: 6px;
+        margin: 0 20px;
+        vertical-align: middle;
+        width: 6px; }
+      .split-sidebar-inner ul li:last-child:after {
+        display: none; }
+
+@media screen and (max-width: 650px) and (min-width: 320px) {
+    .split-sidebar {
+       display:none;
+        
+    }
+   .split-content{
+padding:0px;
+}
+}
+
+
+
+.wp-core-ui .button-primary {
+  border: 0;
+  color: #fff;
+  background-color: #536dfe;
+  padding: 18px 30px 18px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  height:36px !important;
+  outline: 0;
+  transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1), color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  width:100%;
+  -webkit-box-shadow: -1px 2px 20px 0px rgba(166,143,166,1);
+-moz-box-shadow: -1px 2px 20px 0px rgba(166,143,166,1);
+box-shadow: -1px 2px 20px 0px rgba(166,143,166,1);
+margin-top:10px;
+}
+
+div.sp-pp .button:focus,
+div.sp-pp .button:active,
+div.sp-pp .button:hover {
+  background-color: #50617A;
+  color: white;
+  -webkit-box-shadow: -1px 2px 20px 0px rgba(166,143,166,1);
+-moz-box-shadow: -1px 2px 20px 0px rgba(166,143,166,1);
+box-shadow: -1px 2px 20px 0px rgba(166,143,166,1);
+}
+
+#login-header
+{
+display:block;
+height:50px;
+width:50px;
+background:red;
+}
+
+.login #login_error, .login .message
+{margin-top:-42px;}
+
+.login #nav
+{
+ margin:-35px 0 0;
+ text-align:right;
+}
+
+
+#user_login:before
+{
+    content:"";
+    background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/18173-200.png);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+   #login{
+       width:80%;
+       padding-top:30%;
+   }
+   body.login h1 a{
+       width:80%;
+   }
+   #login-btm{
+       display:none;
+   }
+}
+
+
+
+
+

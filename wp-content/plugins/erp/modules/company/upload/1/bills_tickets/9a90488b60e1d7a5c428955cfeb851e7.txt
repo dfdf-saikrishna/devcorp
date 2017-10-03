@@ -1,0 +1,48 @@
+http://35.154.54.45/wp-admin/admin.php?page=View-Post-Request&reqid=238
+
+the request category is not correct. tickets uploaded by travel agent, only 1 is appearing
+
+
+bus selection is changed. during get quote, Rs 611 was selected, but on this page rs 855 is selected. same applies to airlines
+
+other expenses - lunch bills uploaded is not appearing - No validation for the grade limits
+
+http://35.154.54.45/wp-admin/admin.php?page=View-Request&reqid=240
+
+Manager approval - request is showing both travel category as flight, actual is 1 flight and 1 bus
+
+http://35.154.54.45/wp-admin/admin.php?page=Pretravel+view&selExpenseType=1&reqid=240
+
+
+Finance approval - request is showing both travel category as flight, actual is 1 flight and 1 bus
+Approve / Reject / Back buttons are spread apart.
+
+http://35.154.54.45/wp-admin/admin.php?page=View-Post-Request&reqid=240
+Employee - request is showing both travel category as flight, actual is 1 flight and 1 bus
+The title total cost should be estimated cost
+
+
+http://35.154.54.45/wp-admin/admin.php?page=view-booking-req&reqid=240
+Travel Desk- request is showing both travel category as flight, actual is 1 flight and 1 bus
+Failed to book when updated, it does not change
+
+
+http://35.154.54.45/wp-admin/admin.php?page=View-Post-Request&reqid=240
+Employee - failed to book update by travel desk - status shows pending.
+
+http://35.154.54.45/wp-admin/admin.php?page=Submit+Claim&reqid=240
+Employee - submit claim - others expense bills are already uploaded, 
+travel desk already uploaded the air ticket,
+other expense cost is not added t othe total cost
+employee is able to submit the request for reimbursement
+
+
+http://35.154.54.45/wp-admin/admin.php?page=View+Claim&reqid=240
+manager approve claim - the amount payable towards other expense is not appearing on the screen
+No heading for the expense itneary
+
+http://35.154.54.45/wp-admin/admin.php?page=View-Post-Accounts-Request&reqid=240
+Finance - status is appearing as approved
+bills uploaded by the travel desk is not appearing
+No heading for the expense itneary
+

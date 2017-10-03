@@ -1,0 +1,91 @@
+ /* user1(name,phone);
+
+    }
+
+    private void user1(String name,String phone) {
+
+        class Myclass extends AsyncTask<String,Void,String> {
+            RegisterUserClass ruc=new RegisterUserClass();
+
+
+            @Override
+            protected String doInBackground(String... params) {
+                HashMap<String, String> data = new HashMap<String, String>();
+                data.put("name",params[0]);
+                data.put("phone",params[1]);
+                String result = ruc.sendPostRequest(REGISTER_URL, data);
+                return result;
+            }
+            protected void onPostExecute(String s) {
+
+                super.onPostExecute(s);
+                String res = s;
+                Toast.makeText(getApplicationContext(),res, Toast.LENGTH_LONG).show();
+                if(res.trim().equalsIgnoreCase("exist")){
+                    Toast.makeText(getApplicationContext(),"Username and phone already exists", Toast.LENGTH_LONG).show();
+                }
+            }
+        }
+        Myclass mc=new Myclass();
+        mc.execute(name,phone);*/
+
+
+
+
+ name=e1.getText().toString();
+                age=e2.getText().toString();
+                email=e3.getText().toString();
+                password=e4.getText().toString();
+                phone=e5.getText().toString();
+                emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+
+        int count1=name.length();
+        int count2=age.length();
+        int count3=email.length();
+        int count4=password.length();
+        int count5=phone.length();
+
+        if(count1==0&&count2==0&&count3==0&&count4==0&&count5==0 ){
+            Toast.makeText(getApplicationContext(),"enter all fields",Toast.LENGTH_LONG).show();
+
+            e2.setError("Please Enter age");
+            e2.requestFocus();
+            e3.setError("Please Enter Email");
+            e3.requestFocus();
+            e4.setError("Please Enter password");
+            e4.requestFocus();
+            e5.setError("Please Enter phone");
+            e5.requestFocus();
+            e1.setError("Please Enter Username");
+            e1.requestFocus();
+
+        }else if(count1==0){
+            e1.setError("Please Enter Username");
+            e1.requestFocus();
+        }else if(count2==0){
+            e2.setError("Please Enter age");
+            e2.requestFocus();
+        } else if(count3 ==0){
+            e3.setError("Please Enter Email");
+            e3.requestFocus();
+        }else if(count4==0){
+            e4.setError("Please Enter password");
+            e4.requestFocus();
+        }else if(count5==0){
+            e5.setError("Please Enter phone");
+            e5.requestFocus();
+        }else if(!email.matches(emailPattern)){
+            e3.setError("Enter valid email address");
+            e3.requestFocus();
+        }else if(count5<10){
+            e5.setError("Enter valid phone number");
+            e5.requestFocus();
+        }else{
+
+            String method = "register";
+            BackgroundTask backgroundTask = new BackgroundTask(this);
+            backgroundTask.execute(method, name, age, email, password, phone);
+        }
+      
+    }

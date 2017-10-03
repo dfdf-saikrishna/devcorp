@@ -1,0 +1,6 @@
+     modified:   wp-content/plugins/erp/modules/travelagent/assets/js/travelagent.js
+        modified:   wp-content/plugins/erp/modules/travelagent/includes/class-travel-agent-request-list-table.php
+        modified:   wp-content/plugins/erp/modules/travelagent/includes/functions-travelagentuser.php
+        modified:   wp-content/plugins/erp/modules/travelagent/views/js-templates/travelagentclient-create.php
+        modified:   wp-content/plugins/erp/modules/travelagent/views/js-templates/travelagentuser-create.php
+        modified:   wp-content/plugins/erp/vendor/composer/autoload_classmap.php

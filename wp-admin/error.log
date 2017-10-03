@@ -1,0 +1,20 @@
+Constant Contact Exception -- July 19, 2017, 10:15:28am
+Constant Contact HTTP Request Exception: <HTML><HEAD>401 - Unauthorized</HEAD><BODY><H1>401 - Unauthorized</H1><H1>Application data not found for key: dc584880-333d-4c13-99c3-ac097d633de1%</H1></BODY></HTML>
+Stack Trace: #0 C:\wamp\www\fresh\wp-content\plugins\contact-form-newsletter\contact-form-newsletter.php(309): CFN_CTCTRequest->makeRequest('https://api.con...', 'GET')
+#1 C:\wamp\www\fresh\wp-content\plugins\contact-form-newsletter\contact-form-newsletter.php(120): FSCF_CTCT->validateAPI(Object(FSCFConstantContact))
+#2 [internal function]: FSCF_CTCT->adminDisplayForm('')
+#3 C:\wamp\www\fresh\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#4 C:\wamp\www\fresh\wp-includes\class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 C:\wamp\www\fresh\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#6 C:\wamp\www\fresh\wp-content\plugins\si-contact-form\includes\class-fscf-options.php(3173): do_action('fsctf_newslette...')
+#7 [internal function]: FSCF_Options::newsletter_settings_callback(Array)
+#8 C:\wamp\www\fresh\wp-admin\includes\template.php(1319): call_user_func('FSCF_Options::n...', Array)
+#9 C:\wamp\www\fresh\wp-content\plugins\si-contact-form\includes\class-fscf-options.php(465): do_settings_sections('tab_page9')
+#10 [internal function]: FSCF_Options::display_options('')
+#11 C:\wamp\www\fresh\wp-includes\class-wp-hook.php(298): call_user_func_array('FSCF_Options::d...', Array)
+#12 C:\wamp\www\fresh\wp-includes\class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#13 C:\wamp\www\fresh\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#14 C:\wamp\www\fresh\wp-admin\admin.php(222): do_action('plugins_page_si...')
+#15 C:\wamp\www\fresh\wp-admin\plugins.php(10): require_once('C:\\wamp\\www\\fre...')
+#16 {main}
+
