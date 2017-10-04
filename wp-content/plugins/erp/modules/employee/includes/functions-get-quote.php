@@ -861,9 +861,19 @@ foreach ($data['Response']['Results'][0] as $val){
 	
 	$Stop 			= $val['Segments'][0][0]['StopOver'];
 	
-	
-	$ObDuration 	= $val['Segments'][0][0]['Duration'];
-	
+	$hoursconvert 	= $val['Segments'][0][0]['Duration'];
+    
+    if($hoursconvert>60){
+        $ObDuration     = intdiv($hoursconvert, 60).'h '. ($hoursconvert % 60).'m';
+    }
+    if($hoursconvert<60){
+    
+    $ObDuration     = ($hoursconvert % 60).'m';
+	}
+    if($hoursconvert==60){
+    
+    $ObDuration     = intdiv($hoursconvert, 60).'h';
+	}
 	$amnt = $price;
 	
 	
@@ -919,7 +929,21 @@ foreach ($data['Response']['Results'][1] as $val){
 	$Stop 			= $val['Segments'][0][0]['StopOver'];
 	
 	
-	$ObDuration 	= $val['Segments'][0][0]['Duration'];
+	//$ObDuration 	= $val['Segments'][0][0]['Duration'];
+    
+    $hoursconvert 	= $val['Segments'][0][0]['Duration'];
+    
+    if($hoursconvert>60){
+        $ObDuration     = intdiv($hoursconvert, 60).'h '. ($hoursconvert % 60).'m';
+    }
+    if($hoursconvert<60){
+    
+    $ObDuration     = ($hoursconvert % 60).'m';
+	}
+    if($hoursconvert==60){
+    
+    $ObDuration     = intdiv($hoursconvert, 60).'h';
+	}
 	
 	$amnt = $price;
 	
