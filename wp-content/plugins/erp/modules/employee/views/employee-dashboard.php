@@ -175,7 +175,9 @@ global $wpdb;
                 <div class="panel-heading" style="padding: 0px; padding-top: 5px; padding-left: 5px;">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#my" data-toggle="tab"><i class="fa fa-user"></i> My Expenses</a></li>
+                            <?php if($approver){ ?>
                             <li><a href="#myteam" data-toggle="tab"><i class="fa fa-users"></i> My Team Expenses</a></li>
+                            <?php } ?>
                         </ul>
                 </div>
                 <?php
