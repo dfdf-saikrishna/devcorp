@@ -752,14 +752,6 @@ function getFlight($posted,$exptype,$selection=null){
 	
 	*/
 	
-	
-	
-	
-	
-	
-	
-	
-	
     global $wpdb;
     //$date = $_GET['datepicker'];
     //return $posted;die;
